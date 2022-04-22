@@ -1,9 +1,9 @@
 <h1 align="center">Liste des utilisateurs</h1>
-<table align="center" border="1">
+<table align="center" border="1" class="table table-striped">
   <tr><th>ID</th><th>Name</th><th>Username</th><th>Email</th><th>Phone</th></tr>
   <tr *ngFor="let etudiant of etudiants">
     <td>{{etudiant.id}}</td>
-    <td>{{etudiant.name| statsWithDr}}</td>
+    <td>{{etudiant.name|statsWithDr}}</td>
     <td>{{etudiant.username |uppercase}}</td>
     <td>{{etudiant.email}}</td>
     <td>{{etudiant.phone}}</td>
