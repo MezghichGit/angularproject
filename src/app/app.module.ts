@@ -4,11 +4,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ListUsersComponent } from './list-users/list-users.component';
+import { StatsWithDrPipe } from './mypipes/stats-with-dr.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListUsersComponent
+    ListUsersComponent,
+    StatsWithDrPipe
   ],
   imports: [
     BrowserModule,
